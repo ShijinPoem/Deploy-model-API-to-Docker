@@ -5,7 +5,7 @@ import numpy as np
 app = FastAPI()
 
 # Load model khi start server
-model = joblib.load("iris_model.pkl")
+model = joblib.load("models/iris_model.pkl")
 
 @app.get("/")
 def home():
